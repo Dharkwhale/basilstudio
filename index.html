@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basil Studio — Websites for Lagos Food Businesses</title>
+  <meta name="description" content="Basil Studio builds custom websites for Lagos food businesses. Custom branding, WhatsApp ordering, and Google Business setup. Ready in 7 days.">
+  <meta property="og:title" content="Basil Studio — Websites for Lagos Food Businesses">
+  <meta property="og:description" content="Your customers are searching for you online. Let's make sure they find you.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Loading screen -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-content">
+      <div class="loader-leaf">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 162" fill="currentColor">
+          <path d="M60 8 C40 8 16 32 16 66 C16 104 38 146 60 156 C82 146 104 104 104 66 C104 32 80 8 60 8 Z"/>
+          <line x1="60" y1="12" x2="60" y2="152" stroke="rgba(255,255,255,0.18)" stroke-width="2" stroke-linecap="round"/>
+          <line x1="60" y1="46" x2="27" y2="33" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="60" y1="46" x2="93" y2="33" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="60" y1="73" x2="21" y2="58" stroke="rgba(255,255,255,0.1)" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="60" y1="73" x2="99" y2="58" stroke="rgba(255,255,255,0.1)" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="loader-logo">Basil Studio</div>
+      <p class="loader-tag">We build websites for <span class="loader-accent">Lagos</span> food businesses</p>
+    </div>
+  </div>
+
+  <!-- Custom cursor (desktop only) -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- ======================================================
+       NAV
+  ====================================================== -->
+  <nav id="nav" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">
+          <img src="assets/images/bs.png" alt="Basil Studio" class="nav-logo-img">
+          Basil Studio
+        </a>
+
+        <ul class="nav-links" role="list">
+          <li><a href="#services">What We Do</a></li>
+          <li><a href="#portfolio">Our Work</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+
+        <a href="https://wa.me/2347060761165"
+           target="_blank" rel="noopener noreferrer"
+           class="btn btn-primary nav-cta">
+          Get Started on WhatsApp
+        </a>
+
+        <button class="hamburger" id="hamburger"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mobileMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay menu -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <a href="#services" class="mobile-nav-link">What We Do</a>
+    <a href="#portfolio" class="mobile-nav-link">Our Work</a>
+    <a href="#pricing" class="mobile-nav-link">Pricing</a>
+    <a href="#testimonials" class="mobile-nav-link">Clients</a>
+    <a href="https://wa.me/2347060761165"
+       target="_blank" rel="noopener noreferrer"
+       class="btn btn-primary">
+      Get Started on WhatsApp
+    </a>
+  </div>
+
+
+  <!-- ======================================================
+       HERO
+  ====================================================== -->
+  <section id="hero" aria-label="Hero">
+
+    <!-- Basil leaf decorations -->
+    <div class="hero-leaf-1" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 162" fill="currentColor">
+        <path d="M60 8 C40 8 16 32 16 66 C16 104 38 146 60 156 C82 146 104 104 104 66 C104 32 80 8 60 8 Z"/>
+        <line x1="60" y1="12" x2="60" y2="152" stroke="rgba(0,0,0,0.1)" stroke-width="2" stroke-linecap="round"/>
+        <line x1="60" y1="46" x2="27" y2="33" stroke="rgba(0,0,0,0.07)" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="60" y1="46" x2="93" y2="33" stroke="rgba(0,0,0,0.07)" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="60" y1="73" x2="21" y2="58" stroke="rgba(0,0,0,0.07)" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="60" y1="73" x2="99" y2="58" stroke="rgba(0,0,0,0.07)" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="60" y1="100" x2="24" y2="85" stroke="rgba(0,0,0,0.06)" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="60" y1="100" x2="96" y2="85" stroke="rgba(0,0,0,0.06)" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="60" y1="124" x2="32" y2="112" stroke="rgba(0,0,0,0.05)" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="60" y1="124" x2="88" y2="112" stroke="rgba(0,0,0,0.05)" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <div class="hero-leaf-2" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 162" fill="currentColor">
+        <path d="M60 8 C40 8 16 32 16 66 C16 104 38 146 60 156 C82 146 104 104 104 66 C104 32 80 8 60 8 Z"/>
+        <line x1="60" y1="12" x2="60" y2="152" stroke="rgba(0,0,0,0.1)" stroke-width="2" stroke-linecap="round"/>
+        <line x1="60" y1="46" x2="27" y2="33" stroke="rgba(0,0,0,0.07)" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="60" y1="46" x2="93" y2="33" stroke="rgba(0,0,0,0.07)" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="60" y1="73" x2="21" y2="58" stroke="rgba(0,0,0,0.07)" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="60" y1="73" x2="99" y2="58" stroke="rgba(0,0,0,0.07)" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Lagos Food Businesses
+        </div>
+
+        <h1 class="hero-headline">
+          We Build Websites For<br>
+          <em id="rotatingText" class="rotating-text">Food Businesses</em>
+        </h1>
+
+        <p class="hero-sub">
+          Your customers are searching for you online.<br>
+          Let's make sure they find you.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#portfolio" class="btn btn-ghost">See Our Work</a>
+          <a href="https://wa.me/2347060761165"
+             target="_blank" rel="noopener noreferrer"
+             class="btn btn-primary">
+            Get Started on WhatsApp
+          </a>
+        </div>
+
+        <div class="hero-stats" aria-label="Studio highlights">
+          <div class="hero-stat">
+            <span class="hero-stat-num">7</span>
+            <span class="hero-stat-label">Days to Live</span>
+          </div>
+          <div class="hero-stat-divider" aria-hidden="true"></div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">100%</span>
+            <span class="hero-stat-label">Mobile First</span>
+          </div>
+          <div class="hero-stat-divider" aria-hidden="true"></div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">Lagos</span>
+            <span class="hero-stat-label">Based Studio</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="hero-scroll-line"></div>
+      Scroll
+    </div>
+  </section>
+
+  <!-- Marquee strip -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item">Custom Branded Website</span>
+      <span class="marquee-sep">✦</span>
+      <span class="marquee-item">WhatsApp Ordering</span>
+      <span class="marquee-sep">✦</span>
+      <span class="marquee-item">7-Day Delivery</span>
+      <span class="marquee-sep">✦</span>
+      <span class="marquee-item">Lagos Food Businesses</span>
+      <span class="marquee-sep">✦</span>
+      <span class="marquee-item">Google Business Setup</span>
+      <span class="marquee-sep">✦</span>
+      <span class="marquee-item">Mobile-First Design</span>
+      <span class="marquee-sep">✦</span>
+      <span class="marquee-item">Custom Branded Website</span>
+      <span class="marquee-sep">✦</span>
+      <span class="marquee-item">WhatsApp Ordering</span>
+      <span class="marquee-sep">✦</span>
+      <span class="marquee-item">7-Day Delivery</span>
+      <span class="marquee-sep">✦</span>
+      <span class="marquee-item">Lagos Food Businesses</span>
+      <span class="marquee-sep">✦</span>
+      <span class="marquee-item">Google Business Setup</span>
+      <span class="marquee-sep">✦</span>
+      <span class="marquee-item">Mobile-First Design</span>
+      <span class="marquee-sep">✦</span>
+    </div>
+  </div>
+
+
+  <!-- ======================================================
+       WHAT WE DO
+  ====================================================== -->
+  <section id="services" aria-labelledby="services-title">
+    <div class="container">
+
+      <div class="services-header" data-animate>
+        <span class="section-label">What We Do</span>
+        <h2 id="services-title" class="services-title">
+          Everything Your Food Business<br>Needs Online
+        </h2>
+      </div>
+
+      <div class="services-grid" data-stagger>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <!-- Globe icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="2" y1="12" x2="22" y2="12"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+          </div>
+          <h3>Custom Branded Website</h3>
+          <p>Built around your brand, your menu, your colors — not a template. A website that's unmistakably yours and nobody else's.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <!-- Chat bubble / WhatsApp icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+          </div>
+          <h3>WhatsApp Ordering Integration</h3>
+          <p>Customers tap to order directly. No apps, no friction, no middleman — just a tap and a conversation that turns into a sale.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <!-- Map pin icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <h3>Google Business Setup</h3>
+          <p>Show up when someone nearby searches for food. We handle the Google listing so your business appears on the map.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       PORTFOLIO
+  ====================================================== -->
+  <section id="portfolio" aria-labelledby="portfolio-title">
+    <div class="container">
+
+      <div class="portfolio-header" data-animate>
+        <span class="section-label">Our Work</span>
+        <h2 id="portfolio-title" class="portfolio-title">Sites We've Built</h2>
+      </div>
+
+      <div class="portfolio-grid" data-stagger>
+
+        <!-- Rheez Kitchen -->
+        <div class="project-card">
+          <div class="project-preview" aria-hidden="true">
+            <div class="browser-bar">
+              <div class="browser-dots">
+                <div class="browser-dot"></div>
+                <div class="browser-dot"></div>
+                <div class="browser-dot"></div>
+              </div>
+              <div class="browser-url">rheez-kitchen-preview.netlify.app</div>
+            </div>
+            <div class="project-iframe-wrap iframe-fallback-rheez">
+              <iframe
+                src="https://rheez-kitchen-preview.netlify.app"
+                class="project-iframe"
+                scrolling="no"
+                loading="lazy"
+                title="Rheez Kitchen website preview"
+                tabindex="-1"
+              ></iframe>
+            </div>
+            <a href="https://rheez-kitchen-preview.netlify.app"
+               target="_blank" rel="noopener noreferrer"
+               class="preview-overlay"
+               aria-label="View Rheez Kitchen live site">
+              <span class="preview-overlay-btn">View Live Site &#8594;</span>
+            </a>
+          </div>
+          <div class="project-info">
+            <p class="project-meta">Homemade Food Delivery &middot; Ajah, Lagos</p>
+            <h3 class="project-name">Rheez Kitchen</h3>
+            <p class="project-desc">Custom website with WhatsApp ordering for a homemade food delivery brand in Ajah.</p>
+            <a href="https://rheez-kitchen-preview.netlify.app"
+               target="_blank" rel="noopener noreferrer"
+               class="btn btn-outline">
+              View Live Site &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Ana's Kitchen -->
+        <div class="project-card">
+          <div class="project-preview" aria-hidden="true">
+            <div class="browser-bar">
+              <div class="browser-dots">
+                <div class="browser-dot"></div>
+                <div class="browser-dot"></div>
+                <div class="browser-dot"></div>
+              </div>
+              <div class="browser-url">anas-kitchen-preview.netlify.app</div>
+            </div>
+            <div class="project-iframe-wrap iframe-fallback-anas">
+              <iframe
+                src="https://anas-kitchen-preview.netlify.app"
+                class="project-iframe"
+                scrolling="no"
+                loading="lazy"
+                title="Ana's Kitchen website preview"
+                tabindex="-1"
+              ></iframe>
+            </div>
+            <a href="https://anas-kitchen-preview.netlify.app"
+               target="_blank" rel="noopener noreferrer"
+               class="preview-overlay"
+               aria-label="View Ana's Kitchen live site">
+              <span class="preview-overlay-btn">View Live Site &#8594;</span>
+            </a>
+          </div>
+          <div class="project-info">
+            <p class="project-meta">Ewa Agoyin Specialist &middot; Lagos</p>
+            <h3 class="project-name">Ana's Kitchen</h3>
+            <p class="project-desc">Brand website with menu display and Google Business integration for a legendary ewa agoyin spot.</p>
+            <a href="https://anas-kitchen-preview.netlify.app"
+               target="_blank" rel="noopener noreferrer"
+               class="btn btn-outline">
+              View Live Site &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Placeholder -->
+        <div class="card-placeholder" aria-label="More work coming soon">
+          <div class="placeholder-inner">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 162" fill="currentColor" aria-hidden="true">
+              <path d="M60 8 C40 8 16 32 16 66 C16 104 38 146 60 156 C82 146 104 104 104 66 C104 32 80 8 60 8 Z"/>
+              <line x1="60" y1="12" x2="60" y2="152" stroke="rgba(0,0,0,0.15)" stroke-width="2" stroke-linecap="round"/>
+              <line x1="60" y1="46" x2="27" y2="33" stroke="rgba(0,0,0,0.1)" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="60" y1="46" x2="93" y2="33" stroke="rgba(0,0,0,0.1)" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="60" y1="73" x2="21" y2="58" stroke="rgba(0,0,0,0.1)" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="60" y1="73" x2="99" y2="58" stroke="rgba(0,0,0,0.1)" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <p>More coming soon</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       WHY BASIL STUDIO
+  ====================================================== -->
+  <section id="why-us" aria-labelledby="why-title">
+
+    <div class="container">
+      <div class="why-header" data-animate>
+        <span class="section-label">Why Choose Us</span>
+        <h2 id="why-title" class="why-title">Why Food Businesses Choose Us</h2>
+      </div>
+
+      <div class="why-grid" data-stagger>
+
+        <div class="why-card">
+          <div class="why-card-num" aria-hidden="true">01</div>
+          <p class="why-num">01</p>
+          <h3>We Understand Food Businesses</h3>
+          <p>We speak your language. We know what your customers look for and what makes them pick up the phone to order.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-card-num" aria-hidden="true">02</div>
+          <p class="why-num">02</p>
+          <h3>Ready in 7 Days</h3>
+          <p>No long waits. Your website is designed, built, and live within a week so you can start getting customers sooner.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-card-num" aria-hidden="true">03</div>
+          <p class="why-num">03</p>
+          <h3>Built for Mobile</h3>
+          <p>Most of your customers order from their phones. Every site we build is mobile-first, fast, and easy on any device.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="why-decor" aria-hidden="true">Basil</div>
+  </section>
+
+
+  <!-- ======================================================
+       HOW IT WORKS
+  ====================================================== -->
+  <section id="process" aria-labelledby="process-title">
+    <div class="container">
+
+      <div class="process-header" data-animate>
+        <span class="section-label">The Process</span>
+        <h2 id="process-title" class="process-title">How It Works</h2>
+      </div>
+
+      <div class="process-steps" data-stagger>
+
+        <div class="process-step">
+          <div class="step-num">01</div>
+          <h3>We Learn Your Business</h3>
+          <p>One conversation on WhatsApp. We ask about your brand, your customers, your menu and what you want to achieve online. No long forms, no back-and-forth emails.</p>
+        </div>
+
+        <div class="process-connector" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 20" fill="none">
+            <line x1="0" y1="10" x2="52" y2="10" stroke="#ffac29" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <path d="M48 4 L58 10 L48 16" stroke="#ffac29" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+
+        <div class="process-step">
+          <div class="step-num">02</div>
+          <h3>We Build Your Site</h3>
+          <p>In 7 days we design and build your fully branded website. You see progress updates as we go. Nothing goes live until you are happy.</p>
+        </div>
+
+        <div class="process-connector" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 20" fill="none">
+            <line x1="0" y1="10" x2="52" y2="10" stroke="#ffac29" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <path d="M48 4 L58 10 L48 16" stroke="#ffac29" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+
+        <div class="process-step">
+          <div class="step-num">03</div>
+          <h3>You Go Live and Get Customers</h3>
+          <p>Your website goes live on a real link. Your customers can find you, browse your menu and order on WhatsApp immediately. We stay on for 1 month to support you.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       PRICING
+  ====================================================== -->
+  <section id="pricing" aria-labelledby="pricing-title">
+    <div class="container">
+
+      <div class="pricing-header" data-animate>
+        <span class="section-label">Pricing</span>
+        <h2 id="pricing-title" class="pricing-title">Simple, Transparent Pricing</h2>
+      </div>
+
+      <div data-animate>
+        <div class="pricing-card">
+
+          <div class="pricing-head">
+            <p class="pricing-package">Starter Package</p>
+            <p class="pricing-desc">
+              Perfect for food vendors ready to get online<br>
+              and start getting more customers
+            </p>
+          </div>
+
+          <div class="pricing-body">
+            <ul class="pricing-features" role="list">
+              <li>
+                <span class="check-circle" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                       stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </span>
+                Custom branded website
+              </li>
+              <li>
+                <span class="check-circle" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                       stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </span>
+                Full menu display
+              </li>
+              <li>
+                <span class="check-circle" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                       stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </span>
+                WhatsApp ordering button
+              </li>
+              <li>
+                <span class="check-circle" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                       stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </span>
+                Google Business setup
+              </li>
+              <li>
+                <span class="check-circle" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                       stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </span>
+                Mobile optimised
+              </li>
+              <li>
+                <span class="check-circle" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                       stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </span>
+                2 rounds of feedback and changes included
+              </li>
+              <li>
+                <span class="check-circle" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                       stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </span>
+                1 month free support
+              </li>
+            </ul>
+
+            <div class="pricing-price">
+              <p class="price-from">Starting from</p>
+              <p class="price-amount">&#8358;120,000</p>
+            </div>
+
+            <a href="https://wa.me/2347060761165"
+               target="_blank" rel="noopener noreferrer"
+               class="btn btn-primary pricing-btn">
+              Get Started on WhatsApp
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       TESTIMONIALS
+  ====================================================== -->
+  <section id="testimonials" aria-labelledby="testimonials-title">
+    <div class="container">
+
+      <div class="testimonials-header" data-animate>
+        <span class="section-label">Testimonials</span>
+        <h2 id="testimonials-title" class="testimonials-title">What Our Clients Say</h2>
+      </div>
+
+      <div class="testimonials-grid" data-stagger>
+
+        <div class="testimonial-card">
+          <div class="t-stars" aria-label="5 stars">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="t-quote">&ldquo;Testimonial coming soon. We are currently building for our first clients.&rdquo;</p>
+          <div class="t-author">
+            <div class="t-avatar" aria-hidden="true">?</div>
+            <div>
+              <p class="t-name">[Client Name]</p>
+              <p class="t-business">[Business Name]</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="t-stars" aria-label="5 stars">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="t-quote">&ldquo;Testimonial coming soon. We are currently building for our first clients.&rdquo;</p>
+          <div class="t-author">
+            <div class="t-avatar" aria-hidden="true">?</div>
+            <div>
+              <p class="t-name">[Client Name]</p>
+              <p class="t-business">[Business Name]</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="testimonials-note">
+        We are currently working with our first clients &mdash; real testimonials coming soon.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       FINAL CTA
+  ====================================================== -->
+  <section id="final-cta" aria-labelledby="cta-headline">
+
+    <!-- Decorative leaves -->
+    <div class="cta-leaf-left" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 162" fill="currentColor">
+        <path d="M60 8 C40 8 16 32 16 66 C16 104 38 146 60 156 C82 146 104 104 104 66 C104 32 80 8 60 8 Z"/>
+        <line x1="60" y1="12" x2="60" y2="152" stroke="rgba(0,0,0,0.1)" stroke-width="2" stroke-linecap="round"/>
+        <line x1="60" y1="46" x2="27" y2="33" stroke="rgba(0,0,0,0.07)" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="60" y1="46" x2="93" y2="33" stroke="rgba(0,0,0,0.07)" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="60" y1="73" x2="21" y2="58" stroke="rgba(0,0,0,0.07)" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="60" y1="73" x2="99" y2="58" stroke="rgba(0,0,0,0.07)" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="cta-leaf" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 162" fill="currentColor">
+        <path d="M60 8 C40 8 16 32 16 66 C16 104 38 146 60 156 C82 146 104 104 104 66 C104 32 80 8 60 8 Z"/>
+        <line x1="60" y1="12" x2="60" y2="152" stroke="rgba(0,0,0,0.1)" stroke-width="2" stroke-linecap="round"/>
+        <line x1="60" y1="46" x2="27" y2="33" stroke="rgba(0,0,0,0.07)" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="60" y1="46" x2="93" y2="33" stroke="rgba(0,0,0,0.07)" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="60" y1="73" x2="21" y2="58" stroke="rgba(0,0,0,0.07)" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="60" y1="73" x2="99" y2="58" stroke="rgba(0,0,0,0.07)" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="60" y1="100" x2="24" y2="85" stroke="rgba(0,0,0,0.06)" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="60" y1="100" x2="96" y2="85" stroke="rgba(0,0,0,0.06)" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <div class="container">
+      <div class="cta-content" data-animate>
+        <h2 id="cta-headline" class="cta-headline">
+          Ready to Get More<br>Customers Online?
+        </h2>
+        <p class="cta-sub">Let's build something great for your food business.</p>
+        <a href="https://wa.me/2347060761165"
+           target="_blank" rel="noopener noreferrer"
+           class="btn btn-white">
+          Start the Conversation on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       FOOTER
+  ====================================================== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div>
+          <p class="footer-logo">Basil Studio</p>
+          <p class="footer-tagline">We build websites for<br>Lagos food businesses</p>
+        </div>
+
+        <div>
+          <p class="footer-col-title">Navigate</p>
+          <ul class="footer-nav-list" role="list">
+            <li><a href="#services">What We Do</a></li>
+            <li><a href="#portfolio">Our Work</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#testimonials">Clients</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-col-title">Connect</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/basilstudio.ng"
+               target="_blank" rel="noopener noreferrer"
+               class="footer-social-link"
+               aria-label="Instagram: @basilstudio.ng">
+              <!-- Instagram icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                   aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+              @basilstudio.ng
+            </a>
+            <a href="https://wa.me/2347060761165"
+               target="_blank" rel="noopener noreferrer"
+               class="footer-social-link"
+               aria-label="WhatsApp us">
+              <!-- WhatsApp icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.136.566 4.141 1.544 5.876L0 24l6.273-1.495A11.948 11.948 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.908 0-3.692-.523-5.218-1.432l-.374-.215-3.727.887.902-3.621-.237-.387C2.523 15.692 2 13.908 2 12 2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+              </svg>
+              WhatsApp Us
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        Proudly building for Lagos food businesses 🌿
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp button -->
+  <a href="https://wa.me/2347060761165"
+     target="_blank" rel="noopener noreferrer"
+     class="floating-wa"
+     aria-label="Chat with us on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.136.566 4.141 1.544 5.876L0 24l6.273-1.495A11.948 11.948 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.908 0-3.692-.523-5.218-1.432l-.374-.215-3.727.887.902-3.621-.237-.387C2.523 15.692 2 13.908 2 12 2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+    </svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
