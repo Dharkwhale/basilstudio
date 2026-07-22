@@ -348,34 +348,9 @@ h1, h2, h3 {
   animation: fadeUp 0.85s var(--ease) 0.55s both;
 }
 
-.hero-scroll {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  color: rgba(255,255,255,0.38);
-  font-size: 0.65rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  animation: scrollBounce 2.4s ease-in-out infinite;
-}
-.hero-scroll-line {
-  width: 1px;
-  height: 32px;
-  background: linear-gradient(to bottom, rgba(255,255,255,0.35), transparent);
-}
-
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(22px); }
   to   { opacity: 1; transform: translateY(0); }
-}
-@keyframes scrollBounce {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50%       { transform: translateX(-50%) translateY(7px); }
 }
 
 /* ===== SERVICES ===== */
@@ -986,29 +961,7 @@ h1, h2, h3 {
 }
 
 /* ===== SCROLL ANIMATIONS ===== */
-[data-animate] {
-  opacity: 0;
-  transform: translateY(28px);
-  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
-}
-[data-animate].visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Stagger grid children when parent is a grid wrapper */
-[data-stagger] > * {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.65s var(--ease), transform 0.65s var(--ease);
-}
-[data-stagger].visible > * {
-  opacity: 1;
-  transform: translateY(0);
-}
-[data-stagger].visible > *:nth-child(2) { transition-delay: 0.1s; }
-[data-stagger].visible > *:nth-child(3) { transition-delay: 0.2s; }
-[data-stagger].visible > *:nth-child(4) { transition-delay: 0.3s; }
+/* Scroll animations handled by GSAP ScrollTrigger in main.js */
 
 /* ===== RESPONSIVE ===== */
 @media (min-width: 640px) {
@@ -1428,10 +1381,6 @@ h1, h2, h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.72s cubic-bezier(0.76, 0, 0.24, 1);
-}
-#loader.loader-out {
-  transform: translateY(-100%);
 }
 .loader-content {
   text-align: center;
@@ -1441,7 +1390,6 @@ h1, h2, h3 {
   width: 52px;
   margin: 0 auto 1.5rem;
   color: rgba(255,255,255,0.25);
-  animation: loaderUp 0.55s var(--ease) 0.15s both;
 }
 .loader-leaf svg { width: 100%; display: block; }
 .loader-logo {
@@ -1451,20 +1399,15 @@ h1, h2, h3 {
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1;
-  animation: loaderUp 0.55s var(--ease) 0.3s both;
 }
+.loader-logo span { display: inline-block; }
 .loader-tag {
   font-size: 0.9rem;
   color: rgba(255,255,255,0.55);
   margin-top: 0.75rem;
   font-weight: 400;
-  animation: loaderUp 0.55s var(--ease) 0.5s both;
 }
 .loader-accent { color: var(--orange); }
-@keyframes loaderUp {
-  from { opacity: 0; transform: translateY(14px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
 
 /* ============================================================
    UPGRADE 4 — ROTATING HEADLINE TEXT
@@ -1566,5 +1509,3 @@ h1, h2, h3 {
   .process-connector { display: flex; }
 }
 
-/* Extend stagger to 5 children for process connectors */
-[data-stagger].visible > *:nth-child(5) { transition-delay: 0.4s; }
